@@ -21,13 +21,13 @@ def base_settings():
 X = np.linspace(-np.pi, np.pi, 256, endpoint=True)
 C, S = np.cos(X), np.sin(X)
 plt.figure(1, figsize=(6, 4))
-plt.title('Trigonometric function', fontsize=12)
+plt.title('Trigonometric functions', fontsize=12)
 plt.ylim(C.min() * 1.1, C.max() * 1.1)
 plt.yticks([-1, 0, 1], fontsize=10)
 plt.tight_layout()
 
 plt.subplot(211)
-plt.title('Trigonometric function', fontsize=12)
+plt.title('Trigonometric functions', fontsize=12)
 plt.plot(X, S, color='red', linewidth=2.0, linestyle='-', label='sin')
 base_settings()
 
